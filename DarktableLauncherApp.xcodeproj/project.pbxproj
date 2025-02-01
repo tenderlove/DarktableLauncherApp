@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		93F7C5DD2D4EAFC90009A5F7 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F7C5DC2D4EAFC90009A5F7 /* PhotosUI.framework */; };
+		93F7C5DF2D4EAFC90009A5F7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F7C5DE2D4EAFC90009A5F7 /* Photos.framework */; };
+		93F7C5EA2D4EAFC90009A5F7 /* Edit in darktable.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 93F7C5DA2D4EAFC90009A5F7 /* Edit in darktable.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		93F7C5BA2D4EAF7E0009A5F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = 93F7C5A72D4EAF7D0009A5F7;
 			remoteInfo = DarktableLauncherApp;
 		};
+		93F7C5E82D4EAFC90009A5F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F7C5A02D4EAF7D0009A5F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93F7C5D92D4EAFC90009A5F7;
+			remoteInfo = "Edit in darktable";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		93F7C5EF2D4EAFC90009A5F7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93F7C5EA2D4EAFC90009A5F7 /* Edit in darktable.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarktableLauncherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarktableLauncherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarktableLauncherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F7C5DA2D4EAFC90009A5F7 /* Edit in darktable.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Edit in darktable.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F7C5DC2D4EAFC90009A5F7 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		93F7C5DE2D4EAFC90009A5F7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		93F7C5EB2D4EAFC90009A5F7 /* Exceptions for "Edit in darktable" folder in "Edit in darktable" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */ = {
@@ -43,6 +83,14 @@
 		93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DarktableLauncherAppUITests;
+			sourceTree = "<group>";
+		};
+		93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				93F7C5EB2D4EAFC90009A5F7 /* Exceptions for "Edit in darktable" folder in "Edit in darktable" target */,
+			);
+			path = "Edit in darktable";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93F7C5D72D4EAFC90009A5F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F7C5DD2D4EAFC90009A5F7 /* PhotosUI.framework in Frameworks */,
+				93F7C5DF2D4EAFC90009A5F7 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */,
 				93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherAppTests */,
 				93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */,
+				93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */,
+				93F7C5DB2D4EAFC90009A5F7 /* Frameworks */,
 				93F7C5A92D4EAF7D0009A5F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncherApp.app */,
 				93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherAppTests.xctest */,
 				93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherAppUITests.xctest */,
+				93F7C5DA2D4EAFC90009A5F7 /* Edit in darktable.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		93F7C5DB2D4EAFC90009A5F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93F7C5DC2D4EAFC90009A5F7 /* PhotosUI.framework */,
+				93F7C5DE2D4EAFC90009A5F7 /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				93F7C5A42D4EAF7D0009A5F7 /* Sources */,
 				93F7C5A52D4EAF7D0009A5F7 /* Frameworks */,
 				93F7C5A62D4EAF7D0009A5F7 /* Resources */,
+				93F7C5EF2D4EAFC90009A5F7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				93F7C5E92D4EAFC90009A5F7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */,
@@ -163,6 +234,28 @@
 			productReference = 93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F7C5EC2D4EAFC90009A5F7 /* Build configuration list for PBXNativeTarget "Edit in darktable" */;
+			buildPhases = (
+				93F7C5D62D4EAFC90009A5F7 /* Sources */,
+				93F7C5D72D4EAFC90009A5F7 /* Frameworks */,
+				93F7C5D82D4EAFC90009A5F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */,
+			);
+			name = "Edit in darktable";
+			packageProductDependencies = (
+			);
+			productName = "Edit in darktable";
+			productReference = 93F7C5DA2D4EAFC90009A5F7 /* Edit in darktable.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 93F7C5A72D4EAF7D0009A5F7;
 					};
+					93F7C5D92D4EAFC90009A5F7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 93F7C5A32D4EAF7D0009A5F7 /* Build configuration list for PBXProject "DarktableLauncherApp" */;
@@ -203,6 +299,7 @@
 				93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncherApp */,
 				93F7C5B82D4EAF7E0009A5F7 /* DarktableLauncherAppTests */,
 				93F7C5C22D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */,
+				93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		93F7C5C12D4EAF7E0009A5F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F7C5D82D4EAFC90009A5F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93F7C5D62D4EAFC90009A5F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = 93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncherApp */;
 			targetProxy = 93F7C5C42D4EAF7E0009A5F7 /* PBXContainerItemProxy */;
+		};
+		93F7C5E92D4EAFC90009A5F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */;
+			targetProxy = 93F7C5E82D4EAFC90009A5F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -543,6 +659,58 @@
 			};
 			name = Release;
 		};
+		93F7C5ED2D4EAFC90009A5F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Edit in darktable/Edit_in_darktable.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Edit in darktable/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edit in darktable";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tenderlove.DarktableLauncherApp.DarktableLauncherApp.Edit-in-darktable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		93F7C5EE2D4EAFC90009A5F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Edit in darktable/Edit_in_darktable.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Edit in darktable/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edit in darktable";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tenderlove.DarktableLauncherApp.DarktableLauncherApp.Edit-in-darktable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +746,15 @@
 			buildConfigurations = (
 				93F7C5D42D4EAF7E0009A5F7 /* Debug */,
 				93F7C5D52D4EAF7E0009A5F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93F7C5EC2D4EAFC90009A5F7 /* Build configuration list for PBXNativeTarget "Edit in darktable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F7C5ED2D4EAFC90009A5F7 /* Debug */,
+				93F7C5EE2D4EAFC90009A5F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
