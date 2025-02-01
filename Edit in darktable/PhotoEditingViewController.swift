@@ -94,7 +94,7 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
                             }
                         try task.run()
                     } catch {
-                        logger.log("couldn't start tle task")
+                        logger.log("couldn't start the task")
                     }
                 }
 
