@@ -123,6 +123,13 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
                     // that the `finishContentEditing` callback knows that
                     // the process has finished.
                     self.input = contentEditingInput;
+                    do {
+                        let previewURL = try self.renderPreviewJPG(rawPath: originalAssetURL, xmpPath: xmpURL)
+                        logger.log("rendering JPG after darktable exit \(previewURL)")
+                        self.showImagePreview(imageURL: previewURL)
+                    } catch {
+                        logger.log("couldn't render jpg")
+                    }
                 }
                 try task.run()
             } catch {
@@ -132,6 +139,7 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
     }
 
     func finishContentEditing(completionHandler: @escaping ((PHContentEditingOutput?) -> Void)) {
+        logger.log("finishContentEditing called")
         // Render and provide output on a background queue.
         DispatchQueue.global().async {
             // If the input pointer is available, we know darktable closed.
@@ -198,6 +206,7 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
     func showImagePreview(imageURL: URL) {
         if let image = NSImage(contentsOfFile: imageURL.path) {
             self.imagePreview.image = image
+            return
         }
 
         logger.log("Failed to load image")
