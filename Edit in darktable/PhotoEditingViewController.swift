@@ -28,6 +28,8 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
     var basedir = NSURL.fileURL(withPathComponents: [NSTemporaryDirectory(), NSUUID().uuidString])!
 
     @IBOutlet weak var imagePreview: NSImageCell!
+    @IBOutlet weak var imagePreviewView: NSImageView!
+    @IBOutlet weak var spinner: NSProgressIndicator!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,8 +126,9 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
                     // the process has finished.
                     self.input = contentEditingInput;
                     do {
+                        logger.log("rendering JPG after darktable exit")
                         let previewURL = try self.renderPreviewJPG(rawPath: originalAssetURL, xmpPath: xmpURL)
-                        logger.log("rendering JPG after darktable exit \(previewURL)")
+                        logger.log("finished rendering JPG after darktable exit \(previewURL)")
                         self.showImagePreview(imageURL: previewURL)
                     } catch {
                         logger.log("couldn't render jpg")
@@ -185,6 +188,8 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
                     logger.log("couldn't trash item")
                     return
                 }
+                self.spinner.stopAnimation(self)
+                self.spinner.isHidden = true;
 
                 // Tell everyone we've finished
                 completionHandler(output)
@@ -206,6 +211,9 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
     func showImagePreview(imageURL: URL) {
         if let image = NSImage(contentsOfFile: imageURL.path) {
             self.imagePreview.image = image
+            self.imagePreviewView.isHidden = false;
+            self.spinner.stopAnimation(self)
+            self.spinner.isHidden = true;
             return
         }
 
@@ -213,6 +221,9 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
     }
 
     func renderPreviewJPG(rawPath: URL, xmpPath: URL) throws -> URL {
+        self.spinner.startAnimation(self)
+        self.spinner.isHidden = false;
+
         // First check to see if the preview file exists.
         let previewURL = rawPath.deletingPathExtension().appendingPathExtension("jpg")
 
