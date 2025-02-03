@@ -31,3 +31,5 @@ closed before selecting "Edit in darktable"**.
 I think it would be cool if there is a way to communicate with an open
 darktable process and ask it to open a file. That functionality may exist, I
 haven't done any research on it at this point.
+
+![edit in darktable screenshot](images/screenshot.png)
