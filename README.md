@@ -18,9 +18,9 @@ working for me).
 
 ## Good Stuff
 
-This extension stores the XMP metadata in Photos. This means that your edits
+This extension stores the XMP metadata in Photos. This means that **your edits
 are saved in the Photos app, and if you edit the photo again in darktable all
-of your editing history will be available.
+of your editing history will be available**.
 
 ## Bad Stuff
 
