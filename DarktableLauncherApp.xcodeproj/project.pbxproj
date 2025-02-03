@@ -60,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		937594B52D505AFE00537EA1 /* Exceptions for "DarktableLauncherApp" folder in "Edit in darktable" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */;
+		};
 		93F7C5EB2D4EAFC90009A5F7 /* Exceptions for "Edit in darktable" folder in "Edit in darktable" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -72,6 +79,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				937594B52D505AFE00537EA1 /* Exceptions for "DarktableLauncherApp" folder in "Edit in darktable" target */,
+			);
 			path = DarktableLauncherApp;
 			sourceTree = "<group>";
 		};
@@ -180,6 +190,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */,
+				93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */,
 			);
 			name = DarktableLauncherApp;
 			packageProductDependencies = (
