@@ -51,9 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarktableLauncherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarktableLauncherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarktableLauncherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarktableLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarktableLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarktableLauncherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7C5DA2D4EAFC90009A5F7 /* Edit in darktable.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Edit in darktable.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7C5DC2D4EAFC90009A5F7 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		93F7C5DE2D4EAFC90009A5F7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -154,9 +154,9 @@
 		93F7C5A92D4EAF7D0009A5F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncherApp.app */,
-				93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherAppTests.xctest */,
-				93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherAppUITests.xctest */,
+				93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncher.app */,
+				93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherTests.xctest */,
+				93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherUITests.xctest */,
 				93F7C5DA2D4EAFC90009A5F7 /* Edit in darktable.appex */,
 			);
 			name = Products;
@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncherApp */ = {
+		93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F7C5CD2D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherApp" */;
+			buildConfigurationList = 93F7C5CD2D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncher" */;
 			buildPhases = (
 				93F7C5A42D4EAF7D0009A5F7 /* Sources */,
 				93F7C5A52D4EAF7D0009A5F7 /* Frameworks */,
@@ -192,16 +192,16 @@
 				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */,
 				93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */,
 			);
-			name = DarktableLauncherApp;
+			name = DarktableLauncher;
 			packageProductDependencies = (
 			);
 			productName = DarktableLauncherApp;
-			productReference = 93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncherApp.app */;
+			productReference = 93F7C5A82D4EAF7D0009A5F7 /* DarktableLauncher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93F7C5B82D4EAF7E0009A5F7 /* DarktableLauncherAppTests */ = {
+		93F7C5B82D4EAF7E0009A5F7 /* DarktableLauncherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F7C5D02D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherAppTests" */;
+			buildConfigurationList = 93F7C5D02D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherTests" */;
 			buildPhases = (
 				93F7C5B52D4EAF7E0009A5F7 /* Sources */,
 				93F7C5B62D4EAF7E0009A5F7 /* Frameworks */,
@@ -215,16 +215,16 @@
 			fileSystemSynchronizedGroups = (
 				93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherAppTests */,
 			);
-			name = DarktableLauncherAppTests;
+			name = DarktableLauncherTests;
 			packageProductDependencies = (
 			);
 			productName = DarktableLauncherAppTests;
-			productReference = 93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherAppTests.xctest */;
+			productReference = 93F7C5B92D4EAF7E0009A5F7 /* DarktableLauncherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		93F7C5C22D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */ = {
+		93F7C5C22D4EAF7E0009A5F7 /* DarktableLauncherUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F7C5D32D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherAppUITests" */;
+			buildConfigurationList = 93F7C5D32D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherUITests" */;
 			buildPhases = (
 				93F7C5BF2D4EAF7E0009A5F7 /* Sources */,
 				93F7C5C02D4EAF7E0009A5F7 /* Frameworks */,
@@ -238,11 +238,11 @@
 			fileSystemSynchronizedGroups = (
 				93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */,
 			);
-			name = DarktableLauncherAppUITests;
+			name = DarktableLauncherUITests;
 			packageProductDependencies = (
 			);
 			productName = DarktableLauncherAppUITests;
-			productReference = 93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherAppUITests.xctest */;
+			productReference = 93F7C5C32D4EAF7E0009A5F7 /* DarktableLauncherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */ = {
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93F7C5A32D4EAF7D0009A5F7 /* Build configuration list for PBXProject "DarktableLauncherApp" */;
+			buildConfigurationList = 93F7C5A32D4EAF7D0009A5F7 /* Build configuration list for PBXProject "DarktableLauncher" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -307,9 +307,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncherApp */,
-				93F7C5B82D4EAF7E0009A5F7 /* DarktableLauncherAppTests */,
-				93F7C5C22D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */,
+				93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncher */,
+				93F7C5B82D4EAF7E0009A5F7 /* DarktableLauncherTests */,
+				93F7C5C22D4EAF7E0009A5F7 /* DarktableLauncherUITests */,
 				93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */,
 			);
 		};
@@ -380,12 +380,12 @@
 /* Begin PBXTargetDependency section */
 		93F7C5BB2D4EAF7E0009A5F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncherApp */;
+			target = 93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncher */;
 			targetProxy = 93F7C5BA2D4EAF7E0009A5F7 /* PBXContainerItemProxy */;
 		};
 		93F7C5C52D4EAF7E0009A5F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncherApp */;
+			target = 93F7C5A72D4EAF7D0009A5F7 /* DarktableLauncher */;
 			targetProxy = 93F7C5C42D4EAF7E0009A5F7 /* PBXContainerItemProxy */;
 		};
 		93F7C5E92D4EAFC90009A5F7 /* PBXTargetDependency */ = {
@@ -605,7 +605,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarktableLauncherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DarktableLauncherApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarktableLauncher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DarktableLauncher";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -627,7 +627,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarktableLauncherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DarktableLauncherApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarktableLauncher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DarktableLauncher";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -729,7 +729,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93F7C5A32D4EAF7D0009A5F7 /* Build configuration list for PBXProject "DarktableLauncherApp" */ = {
+		93F7C5A32D4EAF7D0009A5F7 /* Build configuration list for PBXProject "DarktableLauncher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93F7C5CB2D4EAF7E0009A5F7 /* Debug */,
@@ -738,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93F7C5CD2D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherApp" */ = {
+		93F7C5CD2D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93F7C5CE2D4EAF7E0009A5F7 /* Debug */,
@@ -747,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93F7C5D02D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherAppTests" */ = {
+		93F7C5D02D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93F7C5D12D4EAF7E0009A5F7 /* Debug */,
@@ -756,7 +756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93F7C5D32D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherAppUITests" */ = {
+		93F7C5D32D4EAF7E0009A5F7 /* Build configuration list for PBXNativeTarget "DarktableLauncherUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93F7C5D42D4EAF7E0009A5F7 /* Debug */,
