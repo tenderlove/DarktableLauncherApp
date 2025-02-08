@@ -505,10 +505,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DarktableLauncherApp/DarktableLauncherApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DarktableLauncher/DarktableLauncher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DarktableLauncherApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DarktableLauncher/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = DarktableLauncher;
@@ -528,7 +528,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tenderlove.DarktableLauncherApp.DarktableLauncherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tenderlove.DarktableLauncher.DarktableLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = macosx;
@@ -544,10 +544,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DarktableLauncherApp/DarktableLauncherApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DarktableLauncher/DarktableLauncher.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DarktableLauncherApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DarktableLauncher/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = DarktableLauncher;
@@ -567,7 +567,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tenderlove.DarktableLauncherApp.DarktableLauncherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tenderlove.DarktableLauncher.DarktableLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = macosx;
