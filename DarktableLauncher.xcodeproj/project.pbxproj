@@ -60,13 +60,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		937594B52D505AFE00537EA1 /* Exceptions for "DarktableLauncherApp" folder in "Edit in darktable" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-			);
-			target = 93F7C5D92D4EAFC90009A5F7 /* Edit in darktable */;
-		};
 		93F7C5EB2D4EAFC90009A5F7 /* Exceptions for "Edit in darktable" folder in "Edit in darktable" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -77,22 +70,19 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */ = {
+		93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncher */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				937594B52D505AFE00537EA1 /* Exceptions for "DarktableLauncherApp" folder in "Edit in darktable" target */,
-			);
-			path = DarktableLauncherApp;
+			path = DarktableLauncher;
 			sourceTree = "<group>";
 		};
-		93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherAppTests */ = {
+		93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DarktableLauncherAppTests;
+			path = DarktableLauncherTests;
 			sourceTree = "<group>";
 		};
-		93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */ = {
+		93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DarktableLauncherAppUITests;
+			path = DarktableLauncherUITests;
 			sourceTree = "<group>";
 		};
 		93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */ = {
@@ -142,9 +132,9 @@
 		93F7C59F2D4EAF7D0009A5F7 = {
 			isa = PBXGroup;
 			children = (
-				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */,
-				93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherAppTests */,
-				93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */,
+				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncher */,
+				93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherTests */,
+				93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherUITests */,
 				93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */,
 				93F7C5DB2D4EAFC90009A5F7 /* Frameworks */,
 				93F7C5A92D4EAF7D0009A5F7 /* Products */,
@@ -189,7 +179,7 @@
 				93F7C5E92D4EAFC90009A5F7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncherApp */,
+				93F7C5AA2D4EAF7D0009A5F7 /* DarktableLauncher */,
 				93F7C5E02D4EAFC90009A5F7 /* Edit in darktable */,
 			);
 			name = DarktableLauncher;
@@ -213,7 +203,7 @@
 				93F7C5BB2D4EAF7E0009A5F7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherAppTests */,
+				93F7C5BC2D4EAF7E0009A5F7 /* DarktableLauncherTests */,
 			);
 			name = DarktableLauncherTests;
 			packageProductDependencies = (
@@ -236,7 +226,7 @@
 				93F7C5C52D4EAF7E0009A5F7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherAppUITests */,
+				93F7C5C62D4EAF7E0009A5F7 /* DarktableLauncherUITests */,
 			);
 			name = DarktableLauncherUITests;
 			packageProductDependencies = (
