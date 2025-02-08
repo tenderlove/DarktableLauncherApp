@@ -1,13 +1,13 @@
 //
-//  DarktableLauncherAppUITests.swift
-//  DarktableLauncherAppUITests
+//  DarktableLauncherUITests.swift
+//  DarktableLauncherUITests
 //
 //  Created by Aaron Patterson on 2/1/25.
 //
 
 import XCTest
 
-final class DarktableLauncherAppUITests: XCTestCase {
+final class DarktableLauncherUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

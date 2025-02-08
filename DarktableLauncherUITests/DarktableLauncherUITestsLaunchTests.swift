@@ -1,13 +1,13 @@
 //
-//  DarktableLauncherAppUITestsLaunchTests.swift
-//  DarktableLauncherAppUITests
+//  DarktableLauncherUITestsLaunchTests.swift
+//  DarktableLauncherUITests
 //
 //  Created by Aaron Patterson on 2/1/25.
 //
 
 import XCTest
 
-final class DarktableLauncherAppUITestsLaunchTests: XCTestCase {
+final class DarktableLauncherUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

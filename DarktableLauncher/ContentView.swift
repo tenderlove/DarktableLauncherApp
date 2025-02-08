@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  DarktableLauncherApp
+//  DarktableLauncher
 //
 //  Created by Aaron Patterson on 2/1/25.
 //
